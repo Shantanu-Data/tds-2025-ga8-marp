@@ -30,9 +30,10 @@ code, pre {
     "Courier New", monospace;
   background-color: #020617;
   border-radius: 0.4rem;
+  padding: 0.4rem 0.6rem;
 }
 
-/* Highlighted slide class via Marp directive _class: highlight */
+/* Highlighted slide */
 section.highlight {
   border-left: 8px solid #fbbf24;
   box-shadow: 0 0 0 1px #4b5563;
@@ -44,7 +45,7 @@ footer {
   color: #9ca3af;
 }
 
-/* Page numbers (bottom-right) using Marp pagination data attributes */
+/* Page numbers */
 section::after {
   position: absolute;
   right: 1.8rem;
@@ -59,13 +60,12 @@ section::after {
 
 # Product Documentation Overview
 
-**Role:** Technical Writer, Platform Team
-
+**Role:** Technical Writer, Platform Team  
 **Email:** **23f3002617@ds.study.iitm.ac.in**
 
-- Maintainable, version-controlled documentation
-- Single Markdown source → multiple output formats (HTML, PDF, PPTX)
-- Built with **Marp** and stored in **Git**
+- Maintainable, version-controlled documentation  
+- Single Markdown → multiple output formats  
+- Built with **Marp**, stored in **Git**  
 
 ---
 
@@ -74,30 +74,29 @@ section::after {
 
 ## Why Marp for Product Docs?
 
-- Documentation lives in **version control (Git)**  
-- Writer-friendly **Markdown** syntax  
-- Can be **reviewed via Pull Requests**  
-- Easily converted to:
-  - HTML slides for internal demos
-  - PDF decks for customers
-  - PPTX for executives
-
-> One source of truth, multiple distribution formats.
+- Documentation lives in **Git**  
+- Updated using normal development workflows  
+- Markdown syntax = simple authoring  
+- Export to:
+  - HTML
+  - PDF
+  - PPTX  
 
 ---
 
-<!-- Background image slide -->
-<!-- _backgroundImage: "url('https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1600&q=80')" -->
-<!-- _backgroundSize: cover -->
-<!-- _backgroundColor: "#000000cc" -->
-<!-- _footer: "System architecture – high-level view" -->
+# Background Image Slide
+
+_backgroundImage: "url('https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1600&q=80')"
+_backgroundSize: cover
+_backgroundColor: "#000000cc"
+_footer: "System architecture – high-level view"
 
 # Architecture at a Glance
 
-- API Gateway
-- Authentication & Authorization service
-- Documentation Rendering service (Marp CLI)
-- Object storage (release artifacts)
+- API Gateway  
+- Authentication & Authorization Service  
+- Documentation Rendering (Marp CLI)  
+- Object Storage  
 
 ---
 
@@ -105,9 +104,9 @@ section::after {
 
 ## Custom Theme & Marp Directives
 
-This deck uses a **custom theme**:
+This deck uses a **custom theme** called `product-docs`.
 
-- Defined in the same file via CSS:
+Defined in the file using CSS:
 
 ```css
 /* @theme product-docs */
@@ -115,3 +114,4 @@ section {
   background-color: #050816;
   color: #e5e7eb;
 }
+
